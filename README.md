@@ -515,12 +515,6 @@ ActionCatalog = {
 
 ```mermaid
 sequenceDiagram
-    participant LLM
-    participant Mind
-    participant Policy
-    participant App
-    participant World
-
     LLM->>Mind: Generate candidates
     Mind->>Mind: sanitizeOutput()
     Mind->>Policy: beforeSubmit callback
