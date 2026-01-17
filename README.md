@@ -690,12 +690,6 @@ flowchart TB
 
 ```mermaid
 sequenceDiagram
-    actor UI
-    participant User
-    participant Actor
-    participant World
-    participant LLM
-    participant Memory
 
     User->>UI: Send message
     UI->>Actor: Record message
