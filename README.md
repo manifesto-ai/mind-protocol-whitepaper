@@ -690,8 +690,8 @@ flowchart TB
 
 ```mermaid
 sequenceDiagram
+    actor UI
     participant User
-    participant UI
     participant Actor
     participant World
     participant LLM
