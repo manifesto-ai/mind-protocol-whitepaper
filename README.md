@@ -692,20 +692,20 @@ flowchart TB
 sequenceDiagram
     participant User
     participant UI
-    participant Actor
+    participant Mind as Actor
     participant World
     participant Memory
     participant LLM
 
     User->>UI: Send message
-    UI->>Actor: Record message
-    Actor->>World: receiveStimulus
-    Actor->>World: applyResonance
-    Actor->>Memory: Update pheromone
-    Actor->>LLM: Generate response
-    LLM-->>Actor: Response text
-    Actor->>Memory: Extract triples (async)
-    Actor->>UI: Display response
+    UI->>Mind: Record message
+    Mind->>World: receiveStimulus
+    Mind->>World: applyResonance
+    Mind->>Memory: Update pheromone
+    Mind->>LLM: Generate response
+    LLM-->>Mind: Response text
+    Mind->>Memory: Extract triples (async)
+    Mind->>UI: Display response
 ```
 
 ### 11.2 Learning Flow
